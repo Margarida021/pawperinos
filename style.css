@@ -138,8 +138,8 @@ section{
 }
 
 .section:nth-child(1){
-    background: url(imagens/borda1.png) top left no-repeat, url(imagens/borda2.png) bottom right no-repeat, url(imagens/padraosg.png) center repeat, radial-gradient(circle, rgba(192,132,252,1) 0%, rgba(124,58,237,1) 100%);
-    background-size: 95%, 12%, 12%, 100%;
+    background: url(imagens/borda1.png) top left no-repeat, url(imagens/padraosg.png) center repeat, radial-gradient(circle, rgba(192,132,252,1) 0%, rgba(124,58,237,1) 100%);
+    background-size: 95%, 12%, 100%;
     width: 100%;
 }
 
