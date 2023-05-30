@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/5e91a1c731.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Shantell+Sans:ital,wght@0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>PAWPERINOS</title>
+</head>
+    <body>
+       <header class="header">
+        <div class="header_content">
+            <a href="#" class="logo">
+                <img src="imagens/paw_logo.svg" class=logo_img alt="logo">
+                <p>PAWPERINOS</p>
+            </a>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link">Services</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#followus" class="nav_link">Follow Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+       </header>
+       <div class="formulario">
+        <div class="close-btn">&times;</div>
+        <form>
+            <h3>GRAB YOUR SPOT</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Enter your @ e-mail" required>
+            <label for="dogsname">Dog's name</label>
+            <input type="text" id="dogsname" placeholder="Enter your dog's name" required>
+            <label for="message">About</label>
+            <textarea id="message" rows="4" placeholder="Tell us a little bit about your dog" required></textarea>
+            <button onsubmit="sendEmail(); reset(); return false;" type="submit">Send</button>
+        </form>
+    </div>
+        <div class="container">
+            <section id="home" class="section">
+                <div class="page_content">
+                    <div>
+                        <img src="imagens/puppylandingp.png" alt="puppy" class="puppy_landingp animate__animated animate__fadeInLeft">
+                    </div>
+                    <div class="text_puppy animate__animated animate__fadeInDown">
+                        <h1><span>PAW</span>PERINOS</h1>
+                        <h2>It's the Pawperino Life!</h2>
+                            <p class="texto_info">Pawperinos is a wonderful day-school for dogs, where furry friends can spend their day while their owners are at work or out running errands. Our school is designed to provide dogs with socialization, exercise, and mental stimulation in a safe and controlled environment.
+                            </p>
+                            <div class="botao">
+                                <button id="grabspot">Grab Your Spot!</button>
+                            </div>
+            </section>
+
+                <section id="services" class="section">
+                    <div class="titulos services_titulo">
+                        <h1><span>OUR</span> SERVICES</h1>
+                        <h2>We provide the best profissionals to take care of your dog. <br> Take a look at the services we provide.</h2>
+                    </div>
+                    <div class="services_info">
+                        <div class="hidden icon_animate info-card">
+                            <img src="imagens/healthpink.svg" class="icon_services">
+                            <h4>CHECK UPS</h4>
+                            <p class="paragrafo_services"> Our team of superhero veterinarians is here to make sure your dogs stay in tip-top shape.</p>
+                        </div>
+                        <div class="hidden icon_animate info-card">
+                            <img src="imagens/grooming.svg" class="icon_services">
+                            <h4>GROOMING</h4>
+                            <p class="paragrafo_services">We'll transform scruffy furballs into glamorous divas and dapper gents. <br> Say goodbye to bad fur days! </p>
+                        </div>
+                        <div class="hidden icon_animate info-card">
+                            <img src="imagens/walk.svg" class="icon_services">
+                            <h4>WE GO FOR WALKIES</h4>
+                            <p class="paragrafo_services">Our walkies are like a doggy expedition, where your furry friend can conquer the world, one lamppost at a time. </p>
+                        </div>
+                        <div class="hidden icon_animate info-card">
+                            <img src="imagens/hotel.svg" class="icon_services">
+                            <h4>SUPERSTAR DOG HOTEL</h4>
+                            <p class="paragrafo_services">Welcome to the lap of luxury for your furry companions.
+                            No more "ruff" accommodations!</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="followus" class="section">
+                    <div class="followus_titulo">
+                        <h1><span>FOLLOW </span> US</h1>
+                    </div>
+                    <div class="followus-container">
+                        <div class="followus-item followus-item-1">
+                            <img src="imagens/subscribe.png" class="subscribe_img">
+                        </div>
+                        <div class="followus-item followus-item-2">
+                            <form>
+                                <h3>SUBSCRIBE TO US!</h3>
+                                <input type="email" id="name_subscribe" placeholder="Enter your @ e-mail" required>
+                                <button id="subscribe" type="subscribed">Send!</button>
+                            </form>
+                        </div>
+                        <div id="social" class="followus-item followus-item-3">
+                            <ul class="links animate__animated animate__fadeInUp">
+                                <li><a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter" class="twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <ul class="navigation">
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        </div>
+    <script src="javascript.js"></script>
+    </body>
+</html>
